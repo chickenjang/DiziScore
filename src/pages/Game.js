@@ -1,3 +1,4 @@
+import Play from "../components/Play";
 import { useState } from "react";
 
 function Game() {
@@ -42,7 +43,13 @@ function Game() {
           <input type="submit" value="다음" />
         </form>
       )}
-      {stage === 2 && <p>플레이 순서는 아래와 같습니다</p>}
+      {stage === 2 && (
+        <div>
+          <p>게임을 시작할까요?</p>
+          <button onClick={() => setStage(3)}>시작하기</button>
+        </div>
+      )}
+      {stage === 3 && <Play />}
     </div>
   );
 }
