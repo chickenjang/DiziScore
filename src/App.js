@@ -1,7 +1,17 @@
+import Main from "./pages/Main";
+import Board from "./pages/Board";
+import Game from "./pages/Game";
+import { Routes, Route } from "react-router";
 import "./App.css";
 
 function App() {
-  return <div>메인페이지입니다.</div>;
+  return (
+    <Routes>
+      <Route path="/" element={<Main />} />
+      <Route path="/board" element={<Board />} />
+      <Route path="/game" element={<Game />} />
+    </Routes>
+  );
 }
 
 export default App;
