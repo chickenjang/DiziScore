@@ -31,22 +31,27 @@ function Game() {
 
   return (
     <div>
-      <h2>플레이 할 인원 수를 입력하세요</h2>
       {stage === 0 && (
-        <form onSubmit={handleNumSubmit}>
-          <input type="number" min={2} max={4} name="numOfPlayers" />
-          <input type="submit" value="다음" />
-        </form>
+        <div>
+          <h2>플레이 할 인원 수를 입력하세요</h2>
+          <form onSubmit={handleNumSubmit}>
+            <input type="number" min={2} max={4} name="numOfPlayers" />
+            <input type="submit" value="다음" />
+          </form>
+        </div>
       )}
       {stage === 1 && (
-        <form onSubmit={handleNameSubmit}>
-          {inputNames}
-          <input type="submit" value="다음" />
-        </form>
+        <div>
+          <h2>플레이들의 이름을 입력하세요</h2>
+          <form onSubmit={handleNameSubmit}>
+            {inputNames}
+            <input type="submit" value="다음" />
+          </form>
+        </div>
       )}
       {stage === 2 && (
         <div>
-          <p>게임을 시작할까요?</p>
+          <h2>게임을 시작할까요?</h2>
           <button onClick={() => setStage(3)}>시작하기</button>
         </div>
       )}

@@ -2,7 +2,7 @@ import { useContext } from "react";
 import Button from "@mui/material/Button";
 
 function ScoreButtons({ name, ScoreContext }) {
-  const { score, setScore } = useContext(ScoreContext);
+  const { setScore } = useContext(ScoreContext);
 
   const scoreButtons = [];
   for (let i = 0; i < 15; i++) {
