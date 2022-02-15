@@ -21,12 +21,13 @@ function Play({ numOfPlayers, players }) {
 
   const playerCards = [];
   for (let i = 0; i < numOfPlayers; i++) {
+    const name = players[i];
     playerCards.push(
       <div key={i}>
-        <Avatar numOfPlayers={numOfPlayers} />
-        <ScoreButtons name={players[i]} ScoreContext={ScoreContext} />
-        <DisplayScore name={players[i]} score={score[players[i]]} />
-        <ResetButton name={players[i]} ScoreContext={ScoreContext} />
+        <Avatar order={i} />
+        <ScoreButtons name={name} ScoreContext={ScoreContext} />
+        <DisplayScore name={name} score={score[players[i]]} />
+        <ResetButton name={name} ScoreContext={ScoreContext} />
       </div>
     );
   }
