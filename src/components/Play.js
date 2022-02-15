@@ -26,7 +26,7 @@ function Play({ numOfPlayers, players }) {
         <Avatar numOfPlayers={numOfPlayers} />
         <ScoreButtons name={players[i]} ScoreContext={ScoreContext} />
         <DisplayScore name={players[i]} score={score[players[i]]} />
-        <ResetButton />
+        <ResetButton name={players[i]} ScoreContext={ScoreContext} />
       </div>
     );
   }
