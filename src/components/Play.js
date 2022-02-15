@@ -1,5 +1,11 @@
-function Play() {
-  return <div>플레이 페이지 입니다</div>;
+import Avatar from "./Avatar";
+
+function Play({ numOfPlayers }) {
+  return (
+    <div>
+      <Avatar numOfPlayers={numOfPlayers} />
+    </div>
+  );
 }
 
 export default Play;

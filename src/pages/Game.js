@@ -49,7 +49,7 @@ function Game() {
           <button onClick={() => setStage(3)}>시작하기</button>
         </div>
       )}
-      {stage === 3 && <Play />}
+      {stage === 3 && <Play numOfPlayers={numOfPlayers} />}
     </div>
   );
 }
