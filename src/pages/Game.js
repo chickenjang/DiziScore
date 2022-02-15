@@ -35,7 +35,13 @@ function Game() {
         <div>
           <h2>플레이 할 인원 수를 입력하세요</h2>
           <form onSubmit={handleNumSubmit}>
-            <input type="number" min={2} max={4} name="numOfPlayers" />
+            <input
+              type="number"
+              min={2}
+              max={4}
+              name="numOfPlayers"
+              placeholder="2~4까지 숫자를 입력하세요"
+            />
             <input type="submit" value="다음" />
           </form>
         </div>
@@ -45,6 +51,7 @@ function Game() {
           <h2>플레이들의 이름을 입력하세요</h2>
           <form onSubmit={handleNameSubmit}>
             {inputNames}
+            <button onClick={() => setStage(stage - 1)}>이전</button>
             <input type="submit" value="다음" />
           </form>
         </div>

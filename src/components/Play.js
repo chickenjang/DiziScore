@@ -31,7 +31,7 @@ function Play({ numOfPlayers, players }) {
       </div>
     );
   }
-
+  // TODO: 현재 1등과 꼴등 텍스트로 표시해주기
   return (
     <div>
       <ScoreContext.Provider value={{ score, setScore }}>
