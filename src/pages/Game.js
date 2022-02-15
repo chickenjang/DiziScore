@@ -21,6 +21,7 @@ function Game() {
   }
 
   const numOfPlayers = JSON.parse(sessionStorage.getItem("numOfPlayers"));
+  const players = JSON.parse(sessionStorage.getItem("players"));
   const inputNames = [];
   let i = 1;
   while (i <= numOfPlayers) {
@@ -49,7 +50,7 @@ function Game() {
           <button onClick={() => setStage(3)}>시작하기</button>
         </div>
       )}
-      {stage === 3 && <Play numOfPlayers={numOfPlayers} />}
+      {stage === 3 && <Play numOfPlayers={numOfPlayers} players={players} />}
     </div>
   );
 }

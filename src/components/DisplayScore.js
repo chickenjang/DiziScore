@@ -1,5 +1,9 @@
-function DisplayScore() {
-  return <div>점수는...</div>;
+function DisplayScore({ name, score }) {
+  return (
+    <div>
+      {name} : {score}
+    </div>
+  );
 }
 
 export default DisplayScore;
