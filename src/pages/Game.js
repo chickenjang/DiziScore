@@ -21,6 +21,7 @@ function Game() {
   }
 
   const numOfPlayers = JSON.parse(sessionStorage.getItem("numOfPlayers"));
+  const players = JSON.parse(sessionStorage.getItem("players"));
   const inputNames = [];
   let i = 1;
   while (i <= numOfPlayers) {
@@ -30,26 +31,38 @@ function Game() {
 
   return (
     <div>
-      <h2>플레이 할 인원 수를 입력하세요</h2>
       {stage === 0 && (
-        <form onSubmit={handleNumSubmit}>
-          <input type="number" min={2} max={4} name="numOfPlayers" />
-          <input type="submit" value="다음" />
-        </form>
+        <div>
+          <h2>플레이 할 인원 수를 입력하세요</h2>
+          <form onSubmit={handleNumSubmit}>
+            <input
+              type="number"
+              min={2}
+              max={4}
+              name="numOfPlayers"
+              placeholder="2~4까지 숫자를 입력하세요"
+            />
+            <input type="submit" value="다음" />
+          </form>
+        </div>
       )}
       {stage === 1 && (
-        <form onSubmit={handleNameSubmit}>
-          {inputNames}
-          <input type="submit" value="다음" />
-        </form>
+        <div>
+          <h2>플레이들의 이름을 입력하세요</h2>
+          <form onSubmit={handleNameSubmit}>
+            {inputNames}
+            <button onClick={() => setStage(stage - 1)}>이전</button>
+            <input type="submit" value="다음" />
+          </form>
+        </div>
       )}
       {stage === 2 && (
         <div>
-          <p>게임을 시작할까요?</p>
+          <h2>게임을 시작할까요?</h2>
           <button onClick={() => setStage(3)}>시작하기</button>
         </div>
       )}
-      {stage === 3 && <Play />}
+      {stage === 3 && <Play numOfPlayers={numOfPlayers} players={players} />}
     </div>
   );
 }
