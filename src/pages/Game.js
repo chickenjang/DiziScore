@@ -15,15 +15,14 @@ function Game() {
   function handleNameSubmit(event) {
     event.preventDefault();
     const players = [...event.target.player].map((item) => item.value);
-    window.sessionStorage.setItem("players", JSON.stringify(players));
+    sessionStorage.setItem("players", JSON.stringify(players));
     setStage(2);
   }
 
-  const numOfPlayers = window.sessionStorage.getItem("numOfPlayers");
-
+  const numOfPlayers = JSON.parse(sessionStorage.getItem("numOfPlayers"));
   const inputNames = [];
   let i = 1;
-  while (i <= JSON.parse(numOfPlayers)) {
+  while (i <= numOfPlayers) {
     inputNames.push(<input type="text" key={i} name="player" />);
     i++;
   }
@@ -43,6 +42,7 @@ function Game() {
           <input type="submit" value="다음" />
         </form>
       )}
+      {stage === 2 && <p>플레이 순서는 아래와 같습니다</p>}
     </div>
   );
 }
