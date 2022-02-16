@@ -8,9 +8,9 @@ function Post() {
     <div>
       <div>
         <div>제목</div>
-        {id}
+        <div>작성자</div>
+        <div>작성시간</div>
         <div>내용</div>
-        {id}
         <Grade grade={2} />
       </div>
     </div>
