@@ -1,5 +1,11 @@
+import Posts from "../components/Posts";
+
 function Board() {
-  return <div>게시판 페이지 입니다</div>;
+  return (
+    <div>
+      <Posts />
+    </div>
+  );
 }
 
 export default Board;
