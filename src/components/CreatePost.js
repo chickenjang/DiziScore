@@ -12,6 +12,7 @@ function CreatePost() {
     // console.log(grade);
   }
 
+  // TODO: 취소버튼, 등록버튼 리다이렉션 구현
   return (
     <form onSubmit={handleSubmit}>
       <label htmlFor="title">제목</label>

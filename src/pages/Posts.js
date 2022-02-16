@@ -1,15 +1,15 @@
-import Posts from "../components/Posts";
+import ReadPosts from "../components/ReadPosts";
 import CreatePost from "../components/CreatePost";
 import { useState } from "react";
 
-function Board() {
+function Posts() {
   const [mode, setMode] = useState("read");
 
   return (
     <div>
       {mode === "read" && (
         <div>
-          <Posts />
+          <ReadPosts />
           <button onClick={() => setMode("create")}>작성하기</button>
         </div>
       )}
@@ -19,4 +19,4 @@ function Board() {
   );
 }
 
-export default Board;
+export default Posts;
