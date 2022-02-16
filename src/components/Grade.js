@@ -3,7 +3,7 @@ import { useState } from "react";
 
 function Grade({ grade }) {
   const [value, setValue] = useState(grade);
-  console.log(grade);
+
   return (
     <div>
       {grade ? (
