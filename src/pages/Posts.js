@@ -29,7 +29,7 @@ function Posts() {
   }, []);
   return (
     <div>
-      {posts}
+      {posts ? posts : <div>loading</div>}
       <Link to={"create"}>
         <button>작성하기</button>
       </Link>
