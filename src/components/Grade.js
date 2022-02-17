@@ -1,9 +1,12 @@
 import Rating from "@mui/material/Rating";
 import { useEffect, useState } from "react";
 
-function Grade({ grade, gradeChange }) {
+function Grade({ grade, originGrade, gradeChange }) {
   const [value, setValue] = useState(grade);
 
+  useEffect(() => {
+    originGrade && setValue(originGrade);
+  }, []);
   useEffect(() => {
     gradeChange && gradeChange(value);
   }, [value]);
