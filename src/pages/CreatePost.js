@@ -29,7 +29,6 @@ function CreatePost() {
     });
   }
 
-  // TODO: 등록버튼 리다이렉션 구현
   return (
     <form onSubmit={handleSubmit}>
       <label htmlFor="title">제목</label>
@@ -45,7 +44,7 @@ function CreatePost() {
       ></textarea>
       <Grade grade={-1} gradeChange={(gradeValue) => setGrade(gradeValue)} />
       <input type="button" value="취소" onClick={() => navigate(-1)} />
-      <input type="submit" value="등록" />
+      <input type="submit" value="등록" onClick={() => navigate(-1)} />
     </form>
   );
 }
