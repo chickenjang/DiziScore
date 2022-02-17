@@ -15,8 +15,8 @@ function ReadPosts() {
           result.map((post) => (
             // css생성 후 style속성 삭제 필요
             <Link
-              to={`/posts/${post.id}`}
-              key={post.id}
+              to={`/posts/${post._id}`}
+              key={post._id}
               style={{ display: "flex" }}
             >
               <div>{post.title}</div>
@@ -27,7 +27,7 @@ function ReadPosts() {
           ))
         )
       );
-  }, [posts]);
+  }, []);
 
   return <div>{posts}</div>;
 }
