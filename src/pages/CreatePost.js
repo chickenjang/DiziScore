@@ -1,4 +1,4 @@
-import Grade from "./Grade";
+import Grade from "../components/Grade";
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 
@@ -29,7 +29,7 @@ function CreatePost() {
     });
   }
 
-  // TODO: 취소버튼, 등록버튼 리다이렉션 구현
+  // TODO: 등록버튼 리다이렉션 구현
   return (
     <form onSubmit={handleSubmit}>
       <label htmlFor="title">제목</label>
