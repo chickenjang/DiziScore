@@ -20,13 +20,13 @@ function Posts() {
             >
               <div>{post.title}</div>
               <Grade grade={post.grade} />
-              <div>{post.author}</div>
+              <div>{post.author}</div>s
               <PastTime createdAt={post.createdAt} />
             </Link>
           ))
         )
       );
-  }, []);
+  }, [posts]);
   return (
     <div>
       {posts ? posts : <div>loading</div>}
