@@ -7,9 +7,24 @@ function CreatePost() {
 
   function handleSubmit(event) {
     event.preventDefault();
-    // TODO: API통신하여 DB에 추가
-    // console.log(event.target);
-    // console.log(grade);
+
+    const title = event.target.title.value;
+    const author = event.target.author.value;
+    const body = event.target.body.value;
+
+    fetch("http://localhost:3001/posts", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({
+        title: title,
+        author: author,
+        body: body,
+        createdAt: Date.now(),
+        grade: grade,
+      }),
+    });
   }
 
   // TODO: 취소버튼, 등록버튼 리다이렉션 구현
@@ -17,6 +32,8 @@ function CreatePost() {
     <form onSubmit={handleSubmit}>
       <label htmlFor="title">제목</label>
       <input type="text" name="title" id="title" />
+      <label htmlFor="author">작성자</label>
+      <input type="text" name="author" id="author" />
       <label htmlFor="body">내용</label>
       <textarea
         name="body"
