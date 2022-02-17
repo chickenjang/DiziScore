@@ -1,9 +1,11 @@
 import Grade from "./Grade";
 import { useState } from "react";
+import { useNavigate } from "react-router-dom";
 
 function CreatePost() {
   const [grade, setGrade] = useState(-1);
   const [textarea, setTextarea] = useState("");
+  const navigate = useNavigate();
 
   function handleSubmit(event) {
     event.preventDefault();
@@ -42,7 +44,7 @@ function CreatePost() {
         onChange={(event) => setTextarea(event.target.value)}
       ></textarea>
       <Grade grade={-1} gradeChange={(gradeValue) => setGrade(gradeValue)} />
-      <input type="button" value="취소" />
+      <input type="button" value="취소" onClick={() => navigate(-1)} />
       <input type="submit" value="등록" />
     </form>
   );
