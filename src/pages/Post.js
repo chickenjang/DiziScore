@@ -1,4 +1,4 @@
-import { useParams } from "react-router-dom";
+import { useParams, useNavigate } from "react-router-dom";
 import Grade from "../components/Grade";
 import { useState, useEffect } from "react";
 import PastTime from "../components/PastTime";
@@ -6,12 +6,18 @@ import PastTime from "../components/PastTime";
 function Post() {
   const { id } = useParams();
   const [post, setPost] = useState(null);
+  const navigate = useNavigate();
 
   useEffect(() => {
     fetch(`http://localhost:3001/posts/${id}`)
       .then((response) => response.json())
       .then((result) => setPost(() => result));
   }, []);
+
+  function handelDeleteClick() {
+    fetch(`http://localhost:3001/posts/${id}`, { method: "DELETE" });
+    navigate("/posts");
+  }
 
   return (
     <div>
@@ -24,6 +30,7 @@ function Post() {
           </div>
           <div>내용 : {post.author}</div>
           <Grade grade={post.grade} />
+          <button onClick={handelDeleteClick}>delete</button>
         </div>
       ) : (
         <div>loading</div>
