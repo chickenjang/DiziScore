@@ -1,0 +1,11 @@
+.display-score {
+  text-align: center;
+}
+.display-score > *:first-child {
+  font-size: var(--text-2);
+  color: var(--gray-3);
+}
+.display-score > *:last-child {
+  font-size: var(--text-3);
+  color: var(--green-2);
+}
