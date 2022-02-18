@@ -1,0 +1,14 @@
+.title {
+  color: red;
+}
+.body {
+  display: flex;
+}
+.body-item {
+  font-size: 2rem;
+  text-decoration: none;
+}
+
+.body-item > img {
+  width: 30vw;
+}
