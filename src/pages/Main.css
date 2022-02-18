@@ -7,7 +7,7 @@
 }
 
 .main-title {
-  font-size: 2.5rem;
+  font-size: var(--text-3);
   color: var(--gray-3);
 }
 .main-body {
@@ -15,7 +15,7 @@
   flex-wrap: wrap;
 }
 .main-body-item {
-  font-size: 1.5rem;
+  font-size: var(--text-2);
   text-decoration: none;
   text-align: center;
   padding: 1.5rem;
