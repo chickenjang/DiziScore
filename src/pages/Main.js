@@ -5,14 +5,14 @@ import gameImg from "../static/images/game.png";
 
 function Main() {
   return (
-    <div>
-      <h2 className="title">어떤 걸 하시겠어요?</h2>
-      <div className="body">
-        <Link to="/posts" className="body-item">
+    <div className="main">
+      <h2 className="main-title">어떤 걸 하시겠어요?</h2>
+      <div className="main-body">
+        <Link to="/posts" className="main-body-item">
           <p>게시판</p>
           <img src={postImg} alt="게시판이미지" />
         </Link>
-        <Link to="/game" className="body-item">
+        <Link to="/game" className="main-body-item">
           <p>게임하기</p>
           <img src={gameImg} alt="게임이미지" />
         </Link>
