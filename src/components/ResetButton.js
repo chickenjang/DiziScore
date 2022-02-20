@@ -1,12 +1,12 @@
 import { useContext } from "react";
-import Button from "@mui/material/Button";
+import "./ResetButton.css";
 
 function ResetButton({ name, ScoreContext }) {
   const { setScore } = useContext(ScoreContext);
 
   return (
-    <Button
-      variant="contained"
+    <button
+      className="reset-btn"
       onClick={() =>
         setScore((current) => {
           const newScore = { ...current };
@@ -16,7 +16,7 @@ function ResetButton({ name, ScoreContext }) {
       }
     >
       Reset Score
-    </Button>
+    </button>
   );
 }
 

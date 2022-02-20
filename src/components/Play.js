@@ -3,6 +3,7 @@ import ScoreButtons from "./ScoreButtons";
 import DisplayScore from "./DisplayScore";
 import ResetButton from "./ResetButton";
 import { useEffect, useState, createContext } from "react";
+import "./Play.css";
 
 function Play({ numOfPlayers, players }) {
   const [score, setScore] = useState({});
@@ -23,7 +24,7 @@ function Play({ numOfPlayers, players }) {
   for (let i = 0; i < numOfPlayers; i++) {
     const name = players[i];
     playerCards.push(
-      <div key={i}>
+      <div key={i} className="play-player">
         <Avatar order={i} />
         <ScoreButtons name={name} ScoreContext={ScoreContext} />
         <DisplayScore name={name} score={score[players[i]]} />
@@ -33,7 +34,7 @@ function Play({ numOfPlayers, players }) {
   }
   // TODO: 현재 1등과 꼴등 텍스트로 표시해주기
   return (
-    <div>
+    <div className="play">
       <ScoreContext.Provider value={{ score, setScore }}>
         {playerCards}
       </ScoreContext.Provider>

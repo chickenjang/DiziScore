@@ -1,0 +1,38 @@
+.main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 3rem;
+}
+
+.main-title {
+  font-size: var(--text-3);
+  color: var(--gray-3);
+}
+.main-body {
+  display: flex;
+  flex-wrap: wrap;
+}
+.main-body-item {
+  font-size: var(--text-2);
+  text-decoration: none;
+  text-align: center;
+  padding: 1.5rem;
+  margin-top: 3rem;
+  border: 1px solid var(--gray-1);
+  border-radius: 0.875rem;
+  box-shadow: 0 0.125rem 0.625rem var(--gray-2);
+  color: var(--red-3);
+  transition: all 200ms;
+}
+.main-body-item:hover {
+  transform: scale(1.1);
+}
+.main-body-item:first-child {
+  margin-right: 4rem;
+}
+
+.main-body-item > img {
+  width: 20vw;
+}

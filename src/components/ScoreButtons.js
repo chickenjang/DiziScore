@@ -1,11 +1,12 @@
 import { useContext } from "react";
 import Button from "@mui/material/Button";
+import "./ScoreButtons.css";
 
 function ScoreButtons({ name, ScoreContext }) {
   const { setScore } = useContext(ScoreContext);
 
   const scoreButtons = [];
-  for (let i = 0; i < 15; i++) {
+  for (let i = 1; i < 13; i++) {
     scoreButtons.push(
       <Button
         variant="outlined"
@@ -23,7 +24,7 @@ function ScoreButtons({ name, ScoreContext }) {
     );
   }
 
-  return <div>{scoreButtons}</div>;
+  return <div className="score-btns">{scoreButtons}</div>;
 }
 
 export default ScoreButtons;

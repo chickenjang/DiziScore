@@ -1,0 +1,23 @@
+.play {
+  margin-top: 20vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 2rem;
+}
+
+.play-player {
+  flex-basis: 25%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 60vh;
+  border: 1px solid var(--gray-1);
+  border-radius: 0.875rem;
+  box-shadow: 0 0.125rem 0.625rem var(--gray-2);
+}
+
+.play-player:not(:last-child) {
+  margin-right: 2rem;
+}
