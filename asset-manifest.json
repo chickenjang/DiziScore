@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/DiziScore/static/css/main.f271671d.css",
-    "main.js": "/DiziScore/static/js/main.516cc0f1.js",
+    "main.js": "/DiziScore/static/js/main.796bc3e2.js",
     "static/js/787.cda612ba.chunk.js": "/DiziScore/static/js/787.cda612ba.chunk.js",
     "static/media/woman1.png": "/DiziScore/static/media/woman1.b078755c3606be916daa.png",
     "static/media/woman2.png": "/DiziScore/static/media/woman2.515947da9e8f46e00e3f.png",
@@ -10,11 +10,11 @@
     "static/media/game.png": "/DiziScore/static/media/game.b594ceddeec5d15c4dc2.png",
     "index.html": "/DiziScore/index.html",
     "main.f271671d.css.map": "/DiziScore/static/css/main.f271671d.css.map",
-    "main.516cc0f1.js.map": "/DiziScore/static/js/main.516cc0f1.js.map",
+    "main.796bc3e2.js.map": "/DiziScore/static/js/main.796bc3e2.js.map",
     "787.cda612ba.chunk.js.map": "/DiziScore/static/js/787.cda612ba.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.f271671d.css",
-    "static/js/main.516cc0f1.js"
+    "static/js/main.796bc3e2.js"
   ]
 }
