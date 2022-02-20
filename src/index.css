@@ -1,13 +1,51 @@
+@font-face {
+  font-family: "Cafe24Ssurround";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2105_2@1.0/Cafe24Ssurround.woff")
+    format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
 body {
+  box-sizing: border-box;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  font-family: "Cafe24Ssurround", -apple-system, BlinkMacSystemFont, "Segoe UI",
+    "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans",
+    "Helvetica Neue", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+:root {
+  --red-3: #ff464f;
+  --red-2: #ff575f;
+  --red-1: #ffe5e7;
+  --orange-3: #ff8a34;
+  --orange-2: #ff974a;
+  --orange-1: #ffefe3;
+  --yellow-3: #ffbc25;
+  --yellow-2: #ffc542;
+  --yellow-1: #fef3d9;
+  --green-3: #25c685;
+  --green-2: #3dd598;
+  --green-1: #d4f5e9;
+  --blue-3: #005df2;
+  --blue-2: #0062ff;
+  --blue-1: #e3eeff;
+  --violet-3: #6952dc;
+  --violet-2: #755fe2;
+  --violet-1: #edeafd;
+  --gray-3: #1a3b34;
+  --gray-2: #899a96;
+  --gray-1: #e4e9f3;
+  --gray-0: #edf1fa;
+  --white: #ffffff;
+  --black: #000000;
+  --text-3: 2.5rem;
+  --text-2: 1.5rem;
+  --text-1: 1rem;
 }

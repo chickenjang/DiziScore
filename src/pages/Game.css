@@ -1,0 +1,78 @@
+.game {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 3rem;
+}
+.game-title {
+  font-size: var(--text-3);
+  color: var(--gray-3);
+}
+.game-form {
+  margin-top: 3rem;
+  display: flex;
+  flex-direction: column;
+}
+.game-form-input {
+  font-family: "Cafe24Ssurround";
+  margin-bottom: 3rem;
+  font-size: var(--text-2);
+  width: 20vw;
+  line-height: var(--text-3);
+  border: 1px solid var(--gray-1);
+  border-radius: 0.4rem;
+  box-shadow: 0 0.125rem 0.625rem var(--gray-1);
+  text-align: center;
+}
+
+.game-form-input::-webkit-outer-spin-button,
+.game-form-input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+
+.game-form-input::placeholder {
+  font-family: "Cafe24Ssurround";
+  font-size: var(--text-1);
+}
+
+.game-form-input:focus {
+  background-color: var(--gray-0);
+}
+
+.game-form-btns {
+  display: flex;
+  justify-content: space-between;
+}
+.game-form-btns > * {
+  width: 40%;
+}
+
+.game-form-button {
+  font-family: "Cafe24Ssurround";
+  font-size: var(--text-2);
+  color: var(--gray-3);
+  line-height: var(--text-3);
+  background-color: var(--green-3);
+  border: 2px solid var(--green-3);
+  border-radius: 0.4rem;
+  transition: all 200ms;
+  cursor: pointer;
+}
+.game-form-button:not(:last-child) {
+  background-color: var(--gray-2);
+  border: 2px solid var(--gray-2);
+}
+.game-form-button:hover {
+  background-color: var(--white);
+}
+
+.game-btns {
+  display: flex;
+  justify-content: space-between;
+  width: 30vw;
+  margin-top: 3rem;
+}
+.game-btns > * {
+  width: 40%;
+}
