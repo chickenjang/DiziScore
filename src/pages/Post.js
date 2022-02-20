@@ -10,13 +10,15 @@ function Post() {
   const navigate = useNavigate();
   const [mode, setMode] = useState("read");
   useEffect(() => {
-    fetch(`http://localhost:3001/posts/${id}`)
+    fetch(`https://diziscoreback.herokuapp.com/posts/${id}`)
       .then((response) => response.json())
       .then((result) => setPost(() => result));
   }, []);
 
   function handelDeleteClick() {
-    fetch(`http://localhost:3001/posts/${id}`, { method: "DELETE" });
+    fetch(`https://diziscoreback.herokuapp.com/posts/${id}`, {
+      method: "DELETE",
+    });
     navigate("/posts");
   }
 

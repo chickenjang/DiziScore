@@ -7,7 +7,7 @@ function Posts() {
   const [posts, setPosts] = useState(null);
 
   useEffect(() => {
-    fetch("http://localhost:3001/posts")
+    fetch("https://diziscoreback.herokuapp.com/posts")
       .then((response) => response.json())
       .then((result) =>
         setPosts(() =>

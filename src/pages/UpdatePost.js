@@ -8,7 +8,7 @@ function UpdatePost({ id }) {
   const [post, setPost] = useState(null);
 
   useEffect(() => {
-    fetch(`http://localhost:3001/posts/${id}`)
+    fetch(`https://diziscoreback.herokuapp.com/posts/${id}`)
       .then((response) => response.json())
       .then((result) => setPost(() => result));
   }, []);
@@ -20,7 +20,7 @@ function UpdatePost({ id }) {
     const author = event.target.author.value;
     const body = event.target.body.value;
 
-    fetch(`http://localhost:3001/posts/${id}`, {
+    fetch(`https://diziscoreback.herokuapp.com/posts/${id}`, {
       method: "PATCH",
       headers: {
         "Content-Type": "application/json",
