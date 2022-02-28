@@ -28,15 +28,35 @@ function ReadPost() {
       {post ? (
         mode === "read" ? (
           <div className="post">
-            <div className="post-title">제목 : {post.title}</div>
-            <div className="post-author">작성자 : {post.author}</div>
-            <div className="post-created-at">
-              작성시간: <PastTime createdAt={post.createdAt} />
+            <div>
+              제목<span className="post-input">{post.title}</span>
             </div>
-            <div className="post-body">내용 : {post.body}</div>
-            <Grade grade={post.grade} />
-            <button onClick={handelDeleteClick}>delete</button>
-            <button onClick={() => setMode("update")}>update</button>
+            <div>
+              작성자<span className="post-input">{post.author}</span>
+            </div>
+            <div>
+              작성시간
+              <span className="post-input">
+                <PastTime createdAt={post.createdAt} />
+              </span>
+            </div>
+            <div>
+              내용<span className="post-input">{post.body}</span>
+            </div>
+            <div className="post-grade">
+              <Grade grade={post.grade} />
+            </div>
+            <div className="post-btns">
+              <button onClick={handelDeleteClick} className="post-btns-delete">
+                delete
+              </button>
+              <button
+                onClick={() => setMode("update")}
+                className="post-btns-update"
+              >
+                update
+              </button>
+            </div>
           </div>
         ) : (
           <UpdatePost id={id} />

@@ -1,0 +1,55 @@
+.post {
+  display: flex;
+  flex-direction: column;
+  color: var(--violet-3);
+}
+
+.post > * {
+  width: 80vw;
+  height: 10vh;
+  line-height: 10vh;
+}
+
+.post-input {
+  color: var(--gray-3);
+  position: absolute;
+  left: 30vw;
+}
+
+.post-grade {
+  text-align: center;
+}
+
+.post-btns {
+  position: absolute;
+  text-align: right;
+  right: 5vw;
+  bottom: 5vh;
+}
+
+.post-btns-delete,
+.post-btns-update {
+  font-family: "Cafe24Ssurround";
+  font-size: var(--text-2);
+  color: var(--gray-1);
+  line-height: var(--text-3);
+  border-radius: 0.4rem;
+  transition: all 200ms;
+  cursor: pointer;
+}
+
+.post-btns-delete {
+  background-color: var(--black);
+  border: 2px solid var(--black);
+  margin-right: 2rem;
+}
+.post-btns-update {
+  background-color: var(--violet-3);
+  border: 2px solid var(--violet-3);
+}
+
+.post-btns-delete:hover,
+.post-btns-update:hover {
+  background-color: var(--white);
+  color: var(--gray-3);
+}
