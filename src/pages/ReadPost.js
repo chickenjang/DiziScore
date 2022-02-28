@@ -3,8 +3,9 @@ import Grade from "../components/Grade";
 import { useState, useEffect } from "react";
 import PastTime from "../components/PastTime";
 import UpdatePost from "./UpdatePost";
+import "./ReadPost.css";
 
-function Post() {
+function ReadPost() {
   const { id } = useParams();
   const [post, setPost] = useState(null);
   const navigate = useNavigate();
@@ -23,16 +24,16 @@ function Post() {
   }
 
   return (
-    <div>
+    <div className="posts-main">
       {post ? (
         mode === "read" ? (
-          <div>
-            <div>제목 : {post.title}</div>
-            <div>작성자 : {post.author}</div>
-            <div>
+          <div className="post">
+            <div className="post-title">제목 : {post.title}</div>
+            <div className="post-author">작성자 : {post.author}</div>
+            <div className="post-created-at">
               작성시간: <PastTime createdAt={post.createdAt} />
             </div>
-            <div>내용 : {post.body}</div>
+            <div className="post-body">내용 : {post.body}</div>
             <Grade grade={post.grade} />
             <button onClick={handelDeleteClick}>delete</button>
             <button onClick={() => setMode("update")}>update</button>
@@ -47,4 +48,4 @@ function Post() {
   );
 }
 
-export default Post;
+export default ReadPost;

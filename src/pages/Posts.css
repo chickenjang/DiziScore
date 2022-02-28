@@ -1,64 +1,11 @@
-.post {
+.posts {
   display: flex;
   height: 100vh;
 }
 
-.post-nav {
+.posts-nav {
   margin: 2rem 0;
   padding: 2rem;
   font-size: var(--text-2);
   border-right: 0.3rem solid var(--yellow-3);
-}
-
-.post-main {
-  margin: 3rem;
-  font-size: var(--text-1);
-  display: flex;
-  flex-direction: column;
-}
-
-.post-main-item {
-  display: flex;
-  width: 80vw;
-  height: 10vh;
-  justify-content: space-between;
-  line-height: 10vh;
-  transition: all 200ms;
-  border-radius: 1rem;
-  padding: 0 1rem;
-  text-decoration: none;
-}
-
-.post-main-item:hover {
-  background-color: var(--yellow-1);
-}
-.post-main-item:link,
-.post-main-item:visited {
-  color: var(--violet-2);
-}
-
-.post-main-item-others {
-  display: flex;
-  width: 25vw;
-  justify-content: space-between;
-}
-
-.post-main-btn {
-  position: absolute;
-  right: 5vw;
-  bottom: 5vh;
-  font-family: "Cafe24Ssurround";
-  font-size: var(--text-2);
-  color: var(--gray-1);
-  line-height: var(--text-3);
-  background-color: var(--violet-3);
-  border: 2px solid var(--violet-3);
-  border-radius: 0.4rem;
-  transition: all 200ms;
-  cursor: pointer;
-}
-
-.post-main-btn:hover {
-  background-color: var(--white);
-  color: var(--gray-3);
 }
