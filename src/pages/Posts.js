@@ -20,7 +20,7 @@ function Posts() {
             >
               <div>{post.title}</div>
               <Grade grade={post.grade} />
-              <div>{post.author}</div>s
+              <div>{post.author}</div>
               <PastTime createdAt={post.createdAt} />
             </Link>
           ))
