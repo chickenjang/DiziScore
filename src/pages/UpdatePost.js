@@ -1,6 +1,7 @@
 import Grade from "../components/Grade";
 import { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
+import "./UpdatePost.css";
 
 function UpdatePost({ id }) {
   const [grade, setGrade] = useState(-1);
@@ -35,7 +36,7 @@ function UpdatePost({ id }) {
   }
 
   return (
-    <div>
+    <div className="post">
       {post && (
         <form onSubmit={handleSubmit}>
           <label htmlFor="title">제목</label>

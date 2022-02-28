@@ -8,6 +8,8 @@
   width: 80vw;
   height: 10vh;
   line-height: 10vh;
+  display: flex;
+  align-items: center;
 }
 
 .post-input {
@@ -17,12 +19,12 @@
 }
 
 .post-grade {
-  text-align: center;
+  justify-content: center;
 }
 
 .post-btns {
   position: absolute;
-  text-align: right;
+  justify-content: right;
   right: 5vw;
   bottom: 5vh;
 }

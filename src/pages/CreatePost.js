@@ -1,6 +1,7 @@
 import Grade from "../components/Grade";
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
+import "./CreatePost.css";
 
 function CreatePost() {
   const [grade, setGrade] = useState(-1);
@@ -30,22 +31,59 @@ function CreatePost() {
   }
 
   return (
-    <form onSubmit={handleSubmit}>
-      <label htmlFor="title">제목</label>
-      <input type="text" name="title" id="title" />
-      <label htmlFor="author">작성자</label>
-      <input type="text" name="author" id="author" />
-      <label htmlFor="body">내용</label>
-      <textarea
-        name="body"
-        id="body"
-        value={textarea}
-        onChange={(event) => setTextarea(event.target.value)}
-      ></textarea>
-      <Grade grade={-1} gradeChange={(gradeValue) => setGrade(gradeValue)} />
-      <input type="button" value="취소" onClick={() => navigate(-1)} />
-      <input type="submit" value="등록" onClick={() => navigate(-1)} />
-    </form>
+    <div className="posts-main">
+      <form onSubmit={handleSubmit} className="post">
+        <div>
+          <label htmlFor="title">제목</label>
+          <input
+            type="text"
+            name="title"
+            id="title"
+            className="post-input write"
+          />
+        </div>
+        <div>
+          <label htmlFor="author">작성자</label>
+          <input
+            type="text"
+            name="author"
+            id="author"
+            className="post-input write"
+          />
+        </div>
+        <div className="post-textarea">
+          <label htmlFor="body">내용</label>
+          <textarea
+            rows={11}
+            name="body"
+            id="body"
+            value={textarea}
+            onChange={(event) => setTextarea(event.target.value)}
+            className="post-input write"
+          ></textarea>
+        </div>
+        <div className="post-grade">
+          <Grade
+            grade={-1}
+            gradeChange={(gradeValue) => setGrade(gradeValue)}
+          />
+        </div>
+        <div className="post-btns">
+          <input
+            type="button"
+            value="취소"
+            onClick={() => navigate(-1)}
+            className="post-btns-cancel"
+          />
+          <input
+            type="submit"
+            value="등록"
+            onClick={() => navigate(-1)}
+            className="post-btns-register"
+          />
+        </div>
+      </form>
+    </div>
   );
 }
 

@@ -1,0 +1,42 @@
+.post-input.write {
+  width: 60vw;
+  font-size: var(--text-1);
+  font-family: "Cafe24Ssurround";
+  color: var(--gray-3);
+  line-height: var(--text-2);
+  border: 1px solid var(--gray-1);
+  border-radius: 0.4rem;
+  padding: 0.4rem;
+  resize: none;
+}
+
+.post-textarea {
+  height: 40vh;
+}
+
+.post-btns-cancel,
+.post-btns-register {
+  font-family: "Cafe24Ssurround";
+  font-size: var(--text-2);
+  color: var(--gray-1);
+  line-height: var(--text-3);
+  border-radius: 0.4rem;
+  transition: all 200ms;
+  cursor: pointer;
+}
+
+.post-btns-cancel {
+  background-color: var(--black);
+  border: 2px solid var(--black);
+  margin-right: 2rem;
+}
+.post-btns-register {
+  background-color: var(--violet-3);
+  border: 2px solid var(--violet-3);
+}
+
+.post-btns-cancel:hover,
+.post-btns-register:hover {
+  background-color: var(--white);
+  color: var(--gray-3);
+}

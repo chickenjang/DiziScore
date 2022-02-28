@@ -46,7 +46,7 @@
   cursor: pointer;
 }
 
-.post-main-btn:hover {
+.posts-main-btn:hover {
   background-color: var(--white);
   color: var(--gray-3);
 }
