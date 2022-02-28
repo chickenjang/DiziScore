@@ -38,52 +38,70 @@ function UpdatePost({ id }) {
   return (
     <div className="post">
       {post && (
-        <form onSubmit={handleSubmit}>
-          <label htmlFor="title">제목</label>
-          <input
-            type="text"
-            name="title"
-            id="title"
-            value={post.title}
-            onChange={(event) =>
-              setPost((current) => {
-                const newPost = { ...current, title: event.target.value };
-                return newPost;
-              })
-            }
-          />
-          <label htmlFor="author">작성자</label>
-          <input
-            type="text"
-            name="author"
-            id="author"
-            value={post.author}
-            onChange={(event) =>
-              setPost((current) => {
-                const newPost = { ...current, author: event.target.value };
-                return newPost;
-              })
-            }
-          />
-          <label htmlFor="body">내용</label>
-          <textarea
-            name="body"
-            id="body"
-            value={post.body}
-            onChange={(event) =>
-              setPost((current) => {
-                const newPost = { ...current, body: event.target.value };
-                return newPost;
-              })
-            }
-          ></textarea>
-          <Grade
-            grade={-1}
-            originGrade={post.grade}
-            gradeChange={(gradeValue) => setGrade(gradeValue)}
-          />
-          <input type="button" value="취소" onClick={() => navigate(-1)} />
-          <input type="submit" value="수정" />
+        <form onSubmit={handleSubmit} className="post">
+          <div>
+            <label htmlFor="title">제목</label>
+            <input
+              type="text"
+              name="title"
+              id="title"
+              value={post.title}
+              onChange={(event) =>
+                setPost((current) => {
+                  const newPost = { ...current, title: event.target.value };
+                  return newPost;
+                })
+              }
+              className="post-input write"
+            />
+          </div>
+          <div>
+            <label htmlFor="author">작성자</label>
+            <input
+              type="text"
+              name="author"
+              id="author"
+              value={post.author}
+              onChange={(event) =>
+                setPost((current) => {
+                  const newPost = { ...current, author: event.target.value };
+                  return newPost;
+                })
+              }
+              className="post-input write"
+            />
+          </div>
+          <div className="post-textarea">
+            <label htmlFor="body">내용</label>
+            <textarea
+              name="body"
+              id="body"
+              value={post.body}
+              onChange={(event) =>
+                setPost((current) => {
+                  const newPost = { ...current, body: event.target.value };
+                  return newPost;
+                })
+              }
+              className="post-input write"
+            ></textarea>
+          </div>
+          <div className="post-grade">
+            <Grade
+              grade={-1}
+              originGrade={post.grade}
+              gradeChange={(gradeValue) => setGrade(gradeValue)}
+            />
+          </div>
+          <div className="post-btns">
+            <input
+              type="button"
+              value="취소"
+              onClick={() => navigate(-1)}
+              className="post-btns-cancel"
+            />
+            <input type="submit" value="수정" className="post-btns-update" />
+          </div>
         </form>
       )}
     </div>
