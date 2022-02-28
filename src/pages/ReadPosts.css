@@ -1,0 +1,52 @@
+.posts-main {
+  margin: 3rem;
+  font-size: var(--text-1);
+  display: flex;
+  flex-direction: column;
+}
+
+.posts-main-item {
+  display: flex;
+  width: 80vw;
+  height: 10vh;
+  justify-content: space-between;
+  line-height: 10vh;
+  transition: all 200ms;
+  border-radius: 1rem;
+  padding: 0 1rem;
+  text-decoration: none;
+}
+
+.posts-main-item:hover {
+  background-color: var(--yellow-1);
+}
+.posts-main-item:link,
+.posts-main-item:visited {
+  color: var(--violet-2);
+}
+
+.posts-main-item-others {
+  display: flex;
+  width: 25vw;
+  justify-content: space-between;
+}
+
+.posts-main-btn {
+  position: absolute;
+  right: 5vw;
+  bottom: 5vh;
+  font-family: "Cafe24Ssurround";
+  font-size: var(--text-2);
+  color: var(--gray-1);
+  line-height: var(--text-3);
+  background-color: var(--violet-3);
+  border: 2px solid var(--violet-3);
+  border-radius: 0.4rem;
+  transition: all 200ms;
+  cursor: pointer;
+}
+
+.posts-main-btn:hover {
+  background-color: var(--white);
+  color: var(--gray-3);
+}
