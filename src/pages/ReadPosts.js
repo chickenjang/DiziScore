@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import Grade from "../components/Grade";
 import PastTime from "../components/PastTime";
+import Loader from "../components/Loader";
 import { useState, useEffect } from "react";
 import "./ReadPosts.css";
 
@@ -31,10 +32,16 @@ function ReadPosts() {
   }, [posts]);
   return (
     <main className="posts-main">
-      {posts ? posts : <div>loading</div>}
-      <Link to={"create"}>
-        <button className="posts-main-btn">작성하기</button>
-      </Link>
+      {posts ? (
+        <div>
+          {posts}
+          <Link to={"create"}>
+            <button className="posts-main-btn">작성하기</button>
+          </Link>
+        </div>
+      ) : (
+        <Loader />
+      )}
     </main>
   );
 }
