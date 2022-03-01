@@ -1,0 +1,11 @@
+.posts {
+  display: flex;
+  height: 100vh;
+}
+
+.posts-nav {
+  margin: 2rem 0;
+  padding: 2rem;
+  font-size: var(--text-2);
+  border-right: 0.3rem solid var(--yellow-3);
+}
