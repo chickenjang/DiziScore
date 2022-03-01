@@ -49,13 +49,13 @@ function ReadPost() {
             </div>
             <div className="post-btns">
               <button onClick={handelDeleteClick} className="post-btns-delete">
-                delete
+                삭제
               </button>
               <button
                 onClick={() => setMode("update")}
                 className="post-btns-update"
               >
-                update
+                수정
               </button>
             </div>
           </div>
