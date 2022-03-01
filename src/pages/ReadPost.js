@@ -3,6 +3,7 @@ import Grade from "../components/Grade";
 import { useState, useEffect } from "react";
 import PastTime from "../components/PastTime";
 import UpdatePost from "./UpdatePost";
+import Loader from "../components/Loader";
 import "./ReadPost.css";
 
 function ReadPost() {
@@ -62,7 +63,7 @@ function ReadPost() {
           <UpdatePost id={id} />
         )
       ) : (
-        <div>loading</div>
+        <Loader />
       )}
     </div>
   );
