@@ -51,7 +51,7 @@
 .game-form-button {
   font-family: "Cafe24Ssurround";
   font-size: var(--text-2);
-  color: var(--gray-3);
+  color: var(--white);
   line-height: var(--text-3);
   background-color: var(--green-3);
   border: 2px solid var(--green-3);
@@ -65,6 +65,7 @@
 }
 .game-form-button:hover {
   background-color: var(--white);
+  color: var(--gray-3);
 }
 
 .game-btns {
