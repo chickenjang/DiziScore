@@ -24,11 +24,11 @@
 
 |                                                    | ![메인](./src/static/images/readme/main.png)       |                                                      |
 | -------------------------------------------------- | -------------------------------------------------- | ---------------------------------------------------- |
-|                                                    | <center>메인화면</center>                          |                                                      |
+|                                                    | <div align="center">메인화면</div>                 |                                                      |
 | ![게임1](./src/static/images/readme/game_num.png)  | ![게임2](./src/static/images/readme/game_name.png) | ![게임3](./src/static/images/readme/game_play.png)   |
-| <center>게임 플레이어 숫자</center>                | <center>게임 플레이어 이름</center>                | <center>게임 스코어</center>                         |
+| <div align="center">게임 플레이어 숫자</div>       | <div align="center">게임 플레이어 이름</div>       | <div align="center">게임 스코어</div>                |
 | ![게시1](./src/static/images/readme/post_list.png) | ![게시2](./src/static/images/readme/post_new.png)  | ![게시3](./src/static/images/readme/post_detail.png) |
-| <center>게시판 메인</center>                       | <center>게시판 새 글 작성</center>                 | <center>게시판 상세</center>                         |
+| <div align="center">게시판 메인</div>              | <div align="center">게시판 새 글 작성</div>        | <div align="center">게시판 상세</div>                |
 
 <br />
 
