@@ -34,7 +34,7 @@
 
 # 🛰 기술스택
 
-![스택이미지](https://s3.us-west-2.amazonaws.com/secure.notion-static.com/d50a4ace-7aa1-48bb-a993-65349ab5bca0/Untitled.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20220303%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20220303T014343Z&X-Amz-Expires=86400&X-Amz-Signature=31fd4c48a5fa6e57daa5c92e138a710669ca302d498cd3f0f8e019c7d9238b35&X-Amz-SignedHeaders=host&response-content-disposition=filename%20%3D%22Untitled.png%22&x-id=GetObject)
+<div align="center"><img src="https://s3.us-west-2.amazonaws.com/secure.notion-static.com/d50a4ace-7aa1-48bb-a993-65349ab5bca0/Untitled.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20220303%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20220303T014343Z&X-Amz-Expires=86400&X-Amz-Signature=31fd4c48a5fa6e57daa5c92e138a710669ca302d498cd3f0f8e019c7d9238b35&X-Amz-SignedHeaders=host&response-content-disposition=filename%20%3D%22Untitled.png%22&x-id=GetObject" width="60%"></div>
 
 <br />
 
