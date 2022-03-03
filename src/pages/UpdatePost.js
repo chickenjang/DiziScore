@@ -32,7 +32,7 @@ function UpdatePost({ id }) {
         body: body,
         grade: grade,
       }),
-    }).then(() => navigate("/posts"));
+    }).then(() => navigate("/DiziScore/posts"));
   }
 
   return (

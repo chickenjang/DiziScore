@@ -21,7 +21,7 @@ function ReadPost() {
     fetch(`https://diziscoreback.herokuapp.com/posts/${id}`, {
       method: "DELETE",
     });
-    navigate("/posts");
+    navigate("/DiziScore/posts");
   }
 
   return (

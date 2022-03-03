@@ -15,7 +15,7 @@ function ReadPosts() {
         setPosts(() =>
           result.map((post) => (
             <Link
-              to={`/posts/${post._id}`}
+              to={`/DiziScore/posts/${post._id}`}
               key={post._id}
               className="posts-main-item"
             >
