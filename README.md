@@ -1,6 +1,6 @@
 # 🎲 디지오스(보드게임)를 도와주는 스코어보드 및 커뮤니티, Dizi-Score
 
-<center><img src="./src/static/favicon/dizios.png" width="60%"></center>
+<div align="center"><img src="./src/static/favicon/dizios.png" width="60%"></div>
 <br />
 <br />
 
