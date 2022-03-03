@@ -1,6 +1,7 @@
 # 🎲 디지오스(보드게임)를 도와주는 스코어보드 및 커뮤니티, Dizi-Score
 
-<center><img src="./src/static/favicon/dizios.png" width="60%"></center>
+<div align="center"><img src="./src/static/favicon/dizios.png" width="60%"></div>
+
 <br />
 <br />
 
@@ -24,17 +25,17 @@
 
 |                                                    | ![메인](./src/static/images/readme/main.png)       |                                                      |
 | -------------------------------------------------- | -------------------------------------------------- | ---------------------------------------------------- |
-|                                                    | <center>메인화면</center>                          |                                                      |
+|                                                    | <div align="center">메인화면</div>                 |                                                      |
 | ![게임1](./src/static/images/readme/game_num.png)  | ![게임2](./src/static/images/readme/game_name.png) | ![게임3](./src/static/images/readme/game_play.png)   |
-| <center>게임 플레이어 숫자</center>                | <center>게임 플레이어 이름</center>                | <center>게임 스코어</center>                         |
+| <div align="center">게임 플레이어 숫자</div>       | <div align="center">게임 플레이어 이름</div>       | <div align="center">게임 스코어</div>                |
 | ![게시1](./src/static/images/readme/post_list.png) | ![게시2](./src/static/images/readme/post_new.png)  | ![게시3](./src/static/images/readme/post_detail.png) |
-| <center>게시판 메인</center>                       | <center>게시판 새 글 작성</center>                 | <center>게시판 상세</center>                         |
+| <div align="center">게시판 메인</div>              | <div align="center">게시판 새 글 작성</div>        | <div align="center">게시판 상세</div>                |
 
 <br />
 
 # 🛰 기술스택
 
-![스택이미지](https://s3.us-west-2.amazonaws.com/secure.notion-static.com/d50a4ace-7aa1-48bb-a993-65349ab5bca0/Untitled.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20220303%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20220303T014343Z&X-Amz-Expires=86400&X-Amz-Signature=31fd4c48a5fa6e57daa5c92e138a710669ca302d498cd3f0f8e019c7d9238b35&X-Amz-SignedHeaders=host&response-content-disposition=filename%20%3D%22Untitled.png%22&x-id=GetObject)
+<div align="center"><img src="https://s3.us-west-2.amazonaws.com/secure.notion-static.com/d50a4ace-7aa1-48bb-a993-65349ab5bca0/Untitled.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20220303%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20220303T014343Z&X-Amz-Expires=86400&X-Amz-Signature=31fd4c48a5fa6e57daa5c92e138a710669ca302d498cd3f0f8e019c7d9238b35&X-Amz-SignedHeaders=host&response-content-disposition=filename%20%3D%22Untitled.png%22&x-id=GetObject" width="60%"></div>
 
 <br />
 
