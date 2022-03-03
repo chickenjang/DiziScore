@@ -32,7 +32,7 @@
 }
 
 .posts-main-btn {
-  position: absolute;
+  position: fixed;
   right: 5vw;
   bottom: 5vh;
   font-family: "Cafe24Ssurround";

@@ -40,6 +40,7 @@ function CreatePost() {
             name="title"
             id="title"
             className="post-input write"
+            required
           />
         </div>
         <div>
@@ -49,6 +50,7 @@ function CreatePost() {
             name="author"
             id="author"
             className="post-input write"
+            required
           />
         </div>
         <div className="post-textarea">
@@ -60,12 +62,14 @@ function CreatePost() {
             value={textarea}
             onChange={(event) => setTextarea(event.target.value)}
             className="post-input write"
+            required
           ></textarea>
         </div>
         <div className="post-grade">
           <Grade
             grade={-1}
             gradeChange={(gradeValue) => setGrade(gradeValue)}
+            required
           />
         </div>
         <div className="post-btns">

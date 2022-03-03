@@ -12,14 +12,13 @@ function App() {
   return (
     <Routes>
       <Route path="/DiziScore" element={<Main />} />
-      {/* Route */}
-      <Route path="/posts" element={<Posts />}>
+      <Route path="/DiziScore/posts" element={<Posts />}>
         <Route index element={<ReadPosts />} />
-        <Route path="/posts/:id" element={<ReadPost />} />
-        <Route path="/posts/create" element={<CreatePost />} />
+        <Route path="/DiziScore/posts/:id" element={<ReadPost />} />
+        <Route path="/DiziScore/posts/create" element={<CreatePost />} />
       </Route>
-      <Route path="/game" element={<Game />} />
-      <Route path="*" element={<NotFound />} />
+      <Route path="/DiziScore/game" element={<Game />} />
+      <Route path="/DiziScore/*" element={<NotFound />} />
     </Routes>
   );
 }
